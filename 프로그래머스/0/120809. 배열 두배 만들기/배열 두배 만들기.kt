@@ -1,9 +1,7 @@
 class Solution {
     fun solution(numbers: IntArray): IntArray {
         var answer: IntArray = intArrayOf()
-        for (i in numbers) {
-            answer += i * 2
-        }
+        answer = numbers.map { it * 2 }.toIntArray()
         return answer
     }
 }
